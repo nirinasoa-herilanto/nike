@@ -1,0 +1,7 @@
+.special-offer {
+  @apply padding flex flex-col gap-10;
+
+  @screen lg {
+    @apply flex flex-row items-center;
+  }
+}
