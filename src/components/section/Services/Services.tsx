@@ -8,8 +8,6 @@ export type ServicesProps = {
 } & JSX.IntrinsicElements['section'];
 
 const Services: React.FC<ServicesProps> = ({ className, ...rest }) => {
-  console.log(services);
-
   return (
     <section className={`${style['services']} ${className || ''}`} {...rest}>
       <ul>
