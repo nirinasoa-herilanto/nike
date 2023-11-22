@@ -10,6 +10,11 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fit {
+  @apply max-w-screen-wide m-auto;
 }
 
 /* for reusable UI style elements */
@@ -17,6 +22,10 @@
   .max-container {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  .shopping-btn {
+    @apply w-[180px] p-3  text-white bg-coral-red rounded-full flex justify-between items-center gap-4 shadow-lg;
   }
 
   .input {

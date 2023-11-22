@@ -1,0 +1,31 @@
+.news-letter {
+  @apply padding flex flex-col gap-12;
+
+  @screen lg {
+    @apply flex-row justify-between items-center gap-0;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 52px;
+  padding: 8px;
+  outline: none;
+  border: 1px #eee solid;
+  border-radius: 22px;
+}
+
+.news-letter__subscribe {
+  @apply flex flex-col gap-4 items-center;
+}
+
+@media (min-width: 1024px) {
+  .input {
+    width: 200px;
+    border: none;
+  }
+
+  .news-letter__subscribe {
+    @apply p-2 flex-row border-[1px] border-[#eee] rounded-full;
+  }
+}

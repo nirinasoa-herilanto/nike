@@ -1,0 +1,7 @@
+.about-us {
+  @apply padding grid gap-8;
+
+  @screen lg {
+    @apply grid grid-cols-2 items-center gap-12;
+  }
+}
