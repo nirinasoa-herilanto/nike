@@ -1,11 +1,13 @@
+import style from './Header.module.css';
+
 import { hamburger } from '../../../assets/icons';
 
-import Logo from '../../ui/Logo';
+import { Logo } from '../../ui';
 import { MainNavigation } from '../MainNavigation';
 
 const Header = () => {
   return (
-    <header className="p-10 lg:px-12">
+    <header className={style['header']}>
       <div className="fit flex justify-between items-center">
         <Logo />
         <MainNavigation className="hidden lg:block" />
