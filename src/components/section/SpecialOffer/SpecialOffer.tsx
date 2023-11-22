@@ -2,10 +2,9 @@ import React from 'react';
 import style from './SpecialOffer.module.css';
 
 import { offer } from '../../../assets/images';
-import { arrowRight } from '../../../assets/icons';
-
-import { CustomTitle } from '../../ui';
 import { specialOfferWording } from './special-offer.wording';
+
+import { CustomTitle, ShoppingButton } from '../../ui';
 
 export type SpecialOfferProps = {
   className?: string;
@@ -31,10 +30,7 @@ const SpecialOffer: React.FC<SpecialOfferProps> = ({ className, ...rest }) => {
         </p>
 
         <div className="mt-8 flex gap-4">
-          <button className="w-[180px] p-3  text-white bg-coral-red rounded-full flex justify-between items-center gap-4">
-            <span>Shop now</span>
-            <img src={arrowRight} alt="arrow right icon" />
-          </button>
+          <ShoppingButton />
 
           <button className="w-[180px] p-3 border-[1px] border-slate-gray text-slate-gray rounded-full text-center">
             Learn more

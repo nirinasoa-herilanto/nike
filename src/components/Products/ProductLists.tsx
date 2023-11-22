@@ -2,7 +2,8 @@ import React from 'react';
 import style from './ProductLists.module.css';
 
 import { products } from '../../config';
-import { star } from '../../assets/icons';
+
+import { Rating } from '../ui';
 
 export type ProductListsProps = {
   className?: string;
@@ -15,10 +16,7 @@ const ProductLists: React.FC<ProductListsProps> = ({ className }) => {
         <li key={product.name} className="flex flex-col gap-6">
           <img src={product.imgURL} alt={product.name} />
 
-          <div className="rating flex items-center gap-2">
-            <img src={star} width={20} height={20} alt="rating" />
-            <span>{'(4.5)'}</span>
-          </div>
+          <Rating value={4.5} />
 
           <div className="produt-detail">
             <div className="font-bold text-lg pb-2">{product.name}</div>

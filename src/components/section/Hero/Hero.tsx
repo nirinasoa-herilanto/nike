@@ -2,9 +2,9 @@ import React from 'react';
 import style from './Hero.module.css';
 
 import { bigShoe1 } from '../../../assets/images';
-import { arrowRight } from '../../../assets/icons';
 
 import Statistics from '../../Statistics';
+import { ShoppingButton } from '../../ui';
 
 export type HeroProps = {
   className?: string;
@@ -23,10 +23,7 @@ const Hero: React.FC<HeroProps> = ({ className, ...rest }) => {
           your active life.
         </p>
 
-        <button className="w-[180px] p-3  text-white bg-coral-red rounded-full flex justify-between items-center gap-4 shadow-lg">
-          <span>Shop now</span>
-          <img src={arrowRight} alt="arrow right icon" />
-        </button>
+        <ShoppingButton />
 
         <Statistics className="pt-8" />
       </div>
