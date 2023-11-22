@@ -1,0 +1,15 @@
+.services {
+  @apply padding;
+}
+
+.services ul {
+  @apply flex flex-wrap gap-9;
+}
+
+.services ul li {
+  @apply w-full px-10 py-16;
+
+  @screen md {
+    @apply min-w-[350px];
+  }
+}
